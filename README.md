@@ -237,7 +237,7 @@ In addition, when `fuzzy_node` is True, properties will not be updated. Because 
 
 ### RPC Service
 
-In the gRPC service, you have to have the parameters clear when you set up the serve.
+In the gRPC service, you have to have the parameters be set when you are running the serve.
 
 ```bash
 $ python server.py [OPTIONS]
@@ -257,15 +257,15 @@ There are total 4 interfaces here:
 - StrRecall
 - NLURecall
 
-The last two is still in development. There is a python client example in the repo.
+The last two is still in development. There is a python client example (`client.py`) in the repo.
 
 ## Why
 
-The original intention is to build a memory part for [chatbot](https://yam.gift/2019/07/20/2019-07-20-ChatBot-Design/). I just want the chatbot to automatically memorize the nodes and relationships discovered in dialogue. The input was defined to be the output of NLU (understand) layer. I also want to use the information when the chatbot is responding to users. So the output was defined to be the input of NLG (generate) layer or NLI (infer) layer. That's it.
+The original intention is to build a memory part for [chatbot](https://yam.gift/2019/07/20/2019-07-20-ChatBot-Design/). We just want the chatbot to automatically memorize the nodes and relationships discovered in dialogue. The input was defined to be the output of NLU (understand) layer. We also want to use the information when the chatbot is responding. So the output was defined to be the input of NLG (generate) layer or NLI (infer) layer. That's it.
 
 ## Batch
 
-We have written an example (under `./batch_example`) to add many nodes and relationships in one time. The data comes from [QASystemOnMedicalKG](https://github.com/liuhuanyong/QASystemOnMedicalKG), feel free to modify the code to fit your demand.
+We have also written an example (under `./batch_example`) to add many nodes and relationships in one time. The data comes from [QASystemOnMedicalKG](https://github.com/liuhuanyong/QASystemOnMedicalKG), feel free to modify the code to fit your demand.
 
 ## Changelog
 
