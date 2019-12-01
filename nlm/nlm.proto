@@ -1,0 +1,51 @@
+syntax = "proto3";
+
+
+package nlm;
+
+
+service NLM {
+    rpc StrRecall (RawString) returns (GraphOutput) {}
+    rpc NLURecall (NLMInput) returns (GraphOutput) {}
+    rpc NodeRecall (GraphNode) returns (GraphNode) {}
+    rpc RelationRecall (GraphRelation) returns (GraphRelation) {}
+}
+
+
+message GraphNode {
+    string label = 1;
+    string name = 2;
+    string props = 3; // json dumps
+}
+
+message GraphRelation {
+    GraphNode start = 1;
+    GraphNode end = 2;
+    string kind = 3;
+    string props = 4; // json dumps
+}
+
+message GraphOutput {
+    oneof gop {
+        GraphNode gn = 1;
+        GraphRelation gr = 2;
+    }
+}
+
+message Entity {
+    string entity = 1;
+    string value = 2;
+}
+
+message NLMInput {
+    string text = 1;
+    string intent = 2;
+    repeated Entity entities = 3;
+}
+
+message RawString {
+    string text = 1;
+}
+
+
+
