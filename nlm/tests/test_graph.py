@@ -84,7 +84,7 @@ def test_check_update_node_is_exist_update(make_node, make_updated_node):
 
 def test_no_props_node(make_node_no_props):
     new = nlmg.check_update_node(make_node_no_props)
-    assert new.identity > 0
+    assert new.identity >= 0
     assert dict(new) == {"name": "Alice"}
     nlmg.graph.delete(new)
 

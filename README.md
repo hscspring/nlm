@@ -39,7 +39,7 @@ Furthermore, recalls are based on nodes (label and name) and  relationships (sta
 
     Here we use another two ports for play and test.
 
-    When the docker has been set up, you should open `http://localhost:7475/browser/`, input the password `neo4j` and then change the password to `password`
+    When the docker has been set up, you should open `http://localhost:7475/browser/`, modify the port to 7688, input the password `neo4j` and then change the password to `password`
 
 - Step 3: Running the tests
 
