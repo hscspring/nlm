@@ -18,6 +18,8 @@ Furthermore, recalls are based on nodes (label and name) and  relationships (sta
 
 ## Setup
 
+**IMPORTANT**: only support Python3.7+.
+
 - Step 1: Install dependencies
 
     ```bash
