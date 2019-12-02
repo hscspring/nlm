@@ -1,4 +1,3 @@
--i https://pypi.douban.com/simple
 -e git+ssh://git@github.com/wearefair/protobuf-to-dict@5abd432946ffdddad9d0d5ef763a020eca226b46#egg=protobuf-to-dict
 addict==2.2.1
 boto3==1.10.28
