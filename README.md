@@ -16,6 +16,8 @@ The extractor is in development.
 
 Furthermore, recalls are based on nodes (label and name) and  relationships (start, end, kind), and their properties are mainly used to sort the results.
 
+中文文档和设计思想：[自然语言记忆模块（NLM） | Yam](https://yam.gift/2019/12/02/2019-12-02-NLM/)。
+
 ## Setup
 
 **IMPORTANT**: only support Python3.7+.
