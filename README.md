@@ -25,14 +25,12 @@ Furthermore, recalls are based on nodes (label and name) and  relationships (sta
 - Step 1: Install dependencies
 
     ```bash
-    # use pipenv
-    $ pipenv install --dev
     # do not have pipenv
     $ python3 -m venv env
     $ source env/bin/activate
     $ pip install -r requirements.txt
     ```
-
+    
 - Step 2: Setup a neo4j database
 
     ```bash

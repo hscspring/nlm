@@ -3,6 +3,7 @@ doc.md
 __pycache__/
 *.py[cod]
 *$py.class
+src/
 
 # C extensions
 *.so
